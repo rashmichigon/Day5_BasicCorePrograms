@@ -4,27 +4,23 @@
     {
         static void Main(string[] args)
         {
-            // Find power using Math.Pow
-            // 6 is base and 2 is power or
-            // index or exponent of a number
-            double pow_ab = Math.Pow(6, 2);
+            int i, n;
+            double s = 0.0;
 
-            // Print the result
-            Console.WriteLine(pow_ab);
+            Console.Write("\n\n");
+            Console.Write("Calculate the harmonic series and their sum:\n");
+            Console.Write("----------------------------------------------");
+            Console.Write("\n\n");
 
-            // 3.5 is base and 3 is power or
-            // index or exponent of a number
-            double pow_tt = Math.Pow(3.5, 3);
-
-            // Print the result
-            Console.WriteLine(pow_tt);
-
-            // 202 is base and 4 is power or
-            // index or exponent of a number
-            double pow_t = Math.Pow(202, 4);
-
-            // Print the result
-            Console.WriteLine(pow_t);
+            Console.Write("Input the number of terms : ");
+            n = Convert.ToInt32(Console.ReadLine());
+            Console.Write("\n\n");
+            for (i = 1; i <= n; i++)
+            {
+                Console.Write("1/{0} + ", i);
+                s += 1 / (float)i;
+            }
+            Console.Write("\nSum of Series upto {0} terms : {1} \n", n, s);
         }
     }
 }
