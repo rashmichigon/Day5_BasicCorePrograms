@@ -4,23 +4,18 @@
     {
         static void Main(string[] args)
         {
-            int i, n;
-            double s = 0.0;
-
-            Console.Write("\n\n");
-            Console.Write("Calculate the harmonic series and their sum:\n");
-            Console.Write("----------------------------------------------");
-            Console.Write("\n\n");
-
-            Console.Write("Input the number of terms : ");
-            n = Convert.ToInt32(Console.ReadLine());
-            Console.Write("\n\n");
-            for (i = 1; i <= n; i++)
+            int num, x;
+            Console.WriteLine("Enter the Number ");
+            num = int.Parse(Console.ReadLine());
+            Console.WriteLine("The Factors are : ");
+            for (x = 1; x <= num; x++)
             {
-                Console.Write("1/{0} + ", i);
-                s += 1 / (float)i;
+                if (num % x == 0)
+                {
+                    Console.WriteLine(x);
+                }
             }
-            Console.Write("\nSum of Series upto {0} terms : {1} \n", n, s);
+            Console.ReadLine();
         }
     }
 }
