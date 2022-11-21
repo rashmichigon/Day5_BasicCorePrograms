@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            FlipCoin.FindPercentageOffFlipCoin();
+           // FlipCoin.FindPercentageOffFlipCoin();
+            LeapYearProgram obj = new LeapYearProgram();
+            obj.readdata();
+            obj.leap();
         }
     }
 }
