@@ -4,20 +4,43 @@
     {
         static void Main(string[] args)
         {
-            int n;   // declare variable
+            char ch;
+            Console.Write("\n\n");
+            Console.Write("Vowel or Consonant checker tool\n");
+            Console.Write("-----------------------------------------------------");
+            Console.Write("\n\n");
 
-            //take input
-            Console.WriteLine("Enter the number = ");
-            n = Convert.ToInt32(Console.ReadLine());
-
-            //check if n is even or odd
-            if (n % 2 == 0)
-                Console.WriteLine(n + " is even");
+            Console.Write("Please Enter an Alphabet (A-Z or a-z) : ");
+            ch = Convert.ToChar(Console.ReadLine().ToLower());
+            int i = ch;
+            if (i >= 48 && i <= 57)
+            {
+                Console.Write("Err! Please enter an alphabet not a number.");
+            }
             else
-                Console.WriteLine(n + " is odd");
-
-            // wait for user to press any key
-            Console.ReadLine();
+            {
+                switch (ch)
+                {
+                    case 'a':
+                        Console.WriteLine("Entered alphabet is vowel");
+                        break;
+                    case 'i':
+                        Console.WriteLine("Entered alphabet is vowel");
+                        break;
+                    case 'o':
+                        Console.WriteLine("Entered alphabet is vowel");
+                        break;
+                    case 'u':
+                        Console.WriteLine("Entered alphabet is vowel");
+                        break;
+                    case 'e':
+                        Console.WriteLine("Entered alphabet is vowel");
+                        break;
+                    default:
+                        Console.WriteLine("Entered alphabet is a Consonant");
+                        break;
+                }
+            }
         }
     }
 }
