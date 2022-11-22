@@ -4,18 +4,20 @@
     {
         static void Main(string[] args)
         {
-            int number1, number2, temp;
-            Console.Write("\nInput the First Number : ");
-            number1 = int.Parse(Console.ReadLine());
-            Console.Write("\nInput the Second Number : ");
-            number2 = int.Parse(Console.ReadLine());
-            temp = number1;
-            number1 = number2;
-            number2 = temp;
-            Console.Write("\nAfter Swapping : ");
-            Console.Write("\nFirst Number : " + number1);
-            Console.Write("\nSecond Number : " + number2);
-            Console.Read();
+            int n;   // declare variable
+
+            //take input
+            Console.WriteLine("Enter the number = ");
+            n = Convert.ToInt32(Console.ReadLine());
+
+            //check if n is even or odd
+            if (n % 2 == 0)
+                Console.WriteLine(n + " is even");
+            else
+                Console.WriteLine(n + " is odd");
+
+            // wait for user to press any key
+            Console.ReadLine();
         }
     }
 }
